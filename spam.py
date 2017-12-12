@@ -1,3 +1,6 @@
+#Inspired from "https://appliedmachinelearning.wordpress.com/2017/01/23/email-spam-filter-python-scikit-learn/"
+
+
 import os
 import numpy as np
 from collections import Counter
@@ -92,4 +95,10 @@ test_labels = np.zeros(260)
 test_labels[130:260] = 1
 result1 = model1.predict(test_matrix)
 print (confusion_matrix(test_labels,result1))
+
+
+
+
+# output 
+# 0.961538461
 
